@@ -26,6 +26,7 @@ if (tg) {
     tg.themeParams?.text_color || "#111111"
   );
 }
+
 const telegramUser = tg?.initDataUnsafe?.user;
 
 const userName =
@@ -130,32 +131,46 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "A place where you can borrow books is a ___",
+      question:
+        "A place where you can borrow books is a ___",
       options: ["hospital", "library", "station", "market"],
       answer: 1,
     },
     {
       category: "Vocabulary",
-      question: "Someone who drives a bus is a ___",
+      question:
+        "Someone who drives a bus is a ___",
       options: ["pilot", "driver", "chef", "teacher"],
       answer: 1,
     },
     {
       category: "Reading",
-      question: "Sarah gets up at 7 o'clock every morning. What time does she get up?",
+      question:
+        "Sarah gets up at 7 o'clock every morning. What time does she get up?",
       options: ["6:00", "7:00", "8:00", "9:00"],
       answer: 1,
     },
     {
       category: "Reading",
-      question: "Tom likes swimming, but he doesn't like football. What sport does Tom like?",
-      options: ["Football", "Tennis", "Swimming", "Basketball"],
+      question:
+        "Tom likes swimming, but he doesn't like football. What sport does Tom like?",
+      options: [
+        "Football",
+        "Tennis",
+        "Swimming",
+        "Basketball",
+      ],
       answer: 2,
     },
     {
       category: "Vocabulary",
       question: "'Beautiful' means:",
-      options: ["chiroyli", "qimmat", "tez", "kichik"],
+      options: [
+        "chiroyli",
+        "qimmat",
+        "tez",
+        "kichik",
+      ],
       answer: 0,
     },
   ],
@@ -170,31 +185,59 @@ const QUESTIONS = {
     {
       category: "Grammar",
       question: "She ___ English for three years.",
-      options: ["studies", "has studied", "study", "studied"],
+      options: [
+        "studies",
+        "has studied",
+        "study",
+        "studied",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
       question: "This book ___ by George Orwell.",
-      options: ["wrote", "was written", "writes", "writing"],
+      options: [
+        "wrote",
+        "was written",
+        "writes",
+        "writing",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
-      question: "I enjoy ___ books in my free time.",
-      options: ["read", "reading", "to read", "reads"],
+      question:
+        "I enjoy ___ books in my free time.",
+      options: [
+        "read",
+        "reading",
+        "to read",
+        "reads",
+      ],
       answer: 1,
     },
     {
       category: "Vocabulary",
-      question: "To 'improve' something means to:",
-      options: ["make it better", "destroy it", "hide it", "forget it"],
+      question:
+        "To 'improve' something means to:",
+      options: [
+        "make it better",
+        "destroy it",
+        "hide it",
+        "forget it",
+      ],
       answer: 0,
     },
     {
       category: "Vocabulary",
-      question: "A person who designs buildings is an:",
-      options: ["architect", "accountant", "athlete", "actor"],
+      question:
+        "A person who designs buildings is an:",
+      options: [
+        "architect",
+        "accountant",
+        "athlete",
+        "actor",
+      ],
       answer: 0,
     },
     {
@@ -211,14 +254,26 @@ const QUESTIONS = {
     },
     {
       category: "Grammar",
-      question: "You ___ wear a seat belt in a car.",
-      options: ["should", "might", "would", "could"],
+      question:
+        "You ___ wear a seat belt in a car.",
+      options: [
+        "should",
+        "might",
+        "would",
+        "could",
+      ],
       answer: 0,
     },
     {
       category: "Vocabulary",
-      question: "The opposite of 'ancient' is:",
-      options: ["old", "historic", "modern", "traditional"],
+      question:
+        "The opposite of 'ancient' is:",
+      options: [
+        "old",
+        "historic",
+        "modern",
+        "traditional",
+      ],
       answer: 2,
     },
     {
@@ -238,38 +293,69 @@ const QUESTIONS = {
   B2: [
     {
       category: "Grammar",
-      question: "By the time we arrived, the film ___.",
-      options: ["started", "had started", "starts", "has started"],
+      question:
+        "By the time we arrived, the film ___.",
+      options: [
+        "started",
+        "had started",
+        "starts",
+        "has started",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
-      question: "If I ___ you, I would accept the offer.",
+      question:
+        "If I ___ you, I would accept the offer.",
       options: ["am", "was", "were", "be"],
       answer: 2,
     },
     {
       category: "Grammar",
-      question: "He denied ___ the information.",
-      options: ["leak", "leaking", "to leak", "leaked"],
+      question:
+        "He denied ___ the information.",
+      options: [
+        "leak",
+        "leaking",
+        "to leak",
+        "leaked",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
-      question: "The project must ___ by Friday.",
-      options: ["complete", "completed", "be completed", "completing"],
+      question:
+        "The project must ___ by Friday.",
+      options: [
+        "complete",
+        "completed",
+        "be completed",
+        "completing",
+      ],
       answer: 2,
     },
     {
       category: "Vocabulary",
-      question: "Someone who is 'reliable' can usually be:",
-      options: ["trusted", "ignored", "avoided", "confused"],
+      question:
+        "Someone who is 'reliable' can usually be:",
+      options: [
+        "trusted",
+        "ignored",
+        "avoided",
+        "confused",
+      ],
       answer: 0,
     },
     {
       category: "Vocabulary",
-      question: "To 'consider' something means to:",
-      options: ["think about it", "remove it", "copy it", "lose it"],
+      question:
+        "To 'consider' something means to:",
+      options: [
+        "think about it",
+        "remove it",
+        "copy it",
+        "lose it",
+      ],
       answer: 0,
     },
     {
@@ -286,14 +372,26 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "A 'significant' change is:",
-      options: ["very small", "important or noticeable", "temporary", "secret"],
+      question:
+        "A 'significant' change is:",
+      options: [
+        "very small",
+        "important or noticeable",
+        "temporary",
+        "secret",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
-      question: "She suggested that we ___ earlier.",
-      options: ["leave", "left", "leaving", "to leave"],
+      question:
+        "She suggested that we ___ earlier.",
+      options: [
+        "leave",
+        "left",
+        "leaving",
+        "to leave",
+      ],
       answer: 0,
     },
     {
@@ -313,7 +411,8 @@ const QUESTIONS = {
   C1: [
     {
       category: "Grammar",
-      question: "Had I known about the problem, I ___ differently.",
+      question:
+        "Had I known about the problem, I ___ differently.",
       options: [
         "would have acted",
         "will act",
@@ -324,13 +423,20 @@ const QUESTIONS = {
     },
     {
       category: "Grammar",
-      question: "It is essential that every applicant ___ the form.",
-      options: ["complete", "completes", "completed", "completing"],
+      question:
+        "It is essential that every applicant ___ the form.",
+      options: [
+        "complete",
+        "completes",
+        "completed",
+        "completing",
+      ],
       answer: 0,
     },
     {
       category: "Vocabulary",
-      question: "To 'mitigate' a problem means to:",
+      question:
+        "To 'mitigate' a problem means to:",
       options: [
         "make it less severe",
         "create it",
@@ -341,7 +447,8 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "If an argument is 'compelling', it is:",
+      question:
+        "If an argument is 'compelling', it is:",
       options: [
         "unconvincing",
         "highly persuasive",
@@ -352,7 +459,8 @@ const QUESTIONS = {
     },
     {
       category: "Grammar",
-      question: "Rarely ___ such an impressive performance.",
+      question:
+        "Rarely ___ such an impressive performance.",
       options: [
         "we see",
         "do we see",
@@ -365,19 +473,36 @@ const QUESTIONS = {
       category: "Reading",
       question:
         "The report highlights several shortcomings in the current system. What does 'shortcomings' mean?",
-      options: ["advantages", "problems or weaknesses", "results", "solutions"],
+      options: [
+        "advantages",
+        "problems or weaknesses",
+        "results",
+        "solutions",
+      ],
       answer: 1,
     },
     {
       category: "Vocabulary",
-      question: "A 'substantial' amount is:",
-      options: ["tiny", "considerable", "unknown", "imaginary"],
+      question:
+        "A 'substantial' amount is:",
+      options: [
+        "tiny",
+        "considerable",
+        "unknown",
+        "imaginary",
+      ],
       answer: 1,
     },
     {
       category: "Grammar",
-      question: "No sooner had he arrived ___ the meeting began.",
-      options: ["when", "than", "then", "that"],
+      question:
+        "No sooner had he arrived ___ the meeting began.",
+      options: [
+        "when",
+        "than",
+        "then",
+        "that",
+      ],
       answer: 1,
     },
     {
@@ -394,7 +519,8 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "To 'allocate' resources means to:",
+      question:
+        "To 'allocate' resources means to:",
       options: [
         "distribute them for specific purposes",
         "destroy them",
@@ -408,7 +534,8 @@ const QUESTIONS = {
   C2: [
     {
       category: "Vocabulary",
-      question: "To 'unequivocal' mean:",
+      question:
+        "To 'unequivocal' mean:",
       options: [
         "ambiguous",
         "completely clear",
@@ -419,7 +546,8 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "A 'pervasive' influence is one that:",
+      question:
+        "A 'pervasive' influence is one that:",
       options: [
         "is widespread",
         "is invisible",
@@ -444,12 +572,18 @@ const QUESTIONS = {
       category: "Grammar",
       question:
         "Much as I ___ to help, there is little I can do.",
-      options: ["would like", "liked", "like to", "am liking"],
+      options: [
+        "would like",
+        "liked",
+        "like to",
+        "am liking",
+      ],
       answer: 0,
     },
     {
       category: "Vocabulary",
-      question: "If something is 'intrinsic', it is:",
+      question:
+        "If something is 'intrinsic', it is:",
       options: [
         "naturally part of something",
         "externally imposed",
@@ -472,7 +606,8 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "To 'exacerbate' a situation means to:",
+      question:
+        "To 'exacerbate' a situation means to:",
       options: [
         "make it worse",
         "solve it",
@@ -483,7 +618,8 @@ const QUESTIONS = {
     },
     {
       category: "Grammar",
-      question: "Not until midnight ___ the final results announced.",
+      question:
+        "Not until midnight ___ the final results announced.",
       options: [
         "were",
         "was",
@@ -494,7 +630,8 @@ const QUESTIONS = {
     },
     {
       category: "Vocabulary",
-      question: "A 'plausible' explanation is:",
+      question:
+        "A 'plausible' explanation is:",
       options: [
         "reasonably believable",
         "obviously false",
@@ -519,21 +656,54 @@ const QUESTIONS = {
 };
 
 const VOCABULARY = [
-  ["achieve", "erishmoq", "She worked hard to achieve her goal."],
-  ["improve", "yaxshilamoq", "I want to improve my English."],
-  ["challenge", "qiyinchilik", "Learning English can be a challenge."],
-  ["confident", "o‘ziga ishongan", "She feels confident when speaking English."],
-  ["knowledge", "bilim", "Knowledge is important for success."],
-  ["opportunity", "imkoniyat", "This course is a great opportunity."],
-  ["environment", "atrof-muhit", "We should protect the environment."],
-  ["decision", "qaror", "He made an important decision."],
+  [
+    "achieve",
+    "erishmoq",
+    "She worked hard to achieve her goal.",
+  ],
+  [
+    "improve",
+    "yaxshilamoq",
+    "I want to improve my English.",
+  ],
+  [
+    "challenge",
+    "qiyinchilik",
+    "Learning English can be a challenge.",
+  ],
+  [
+    "confident",
+    "o‘ziga ishongan",
+    "She feels confident when speaking English.",
+  ],
+  [
+    "knowledge",
+    "bilim",
+    "Knowledge is important for success.",
+  ],
+  [
+    "opportunity",
+    "imkoniyat",
+    "This course is a great opportunity.",
+  ],
+  [
+    "environment",
+    "atrof-muhit",
+    "We should protect the environment.",
+  ],
+  [
+    "decision",
+    "qaror",
+    "He made an important decision.",
+  ],
 ];
 
 const GRAMMAR = [
   {
     title: "Present Simple",
     icon: "🟢",
-    text: "Present Simple odatlar, kundalik ishlar va umumiy haqiqatlar uchun ishlatiladi.",
+    text:
+      "Present Simple odatlar, kundalik ishlar va umumiy haqiqatlar uchun ishlatiladi.",
     examples: [
       "I study English every day.",
       "She works at a school.",
@@ -543,7 +713,8 @@ const GRAMMAR = [
   {
     title: "Present Continuous",
     icon: "🔵",
-    text: "Hozir ayni vaqtda davom etayotgan ish-harakatni ifodalaydi.",
+    text:
+      "Hozir ayni vaqtda davom etayotgan ish-harakatni ifodalaydi.",
     examples: [
       "I am studying now.",
       "She is reading a book.",
@@ -553,7 +724,8 @@ const GRAMMAR = [
   {
     title: "Past Simple",
     icon: "🟠",
-    text: "O‘tmishda sodir bo‘lib tugagan ish-harakatlar uchun ishlatiladi.",
+    text:
+      "O‘tmishda sodir bo‘lib tugagan ish-harakatlar uchun ishlatiladi.",
     examples: [
       "I visited Tashkent yesterday.",
       "She watched a movie.",
@@ -563,7 +735,8 @@ const GRAMMAR = [
   {
     title: "Future Simple",
     icon: "🟣",
-    text: "Kelajakdagi reja, taxmin yoki qarorlarni ifodalashda ishlatiladi.",
+    text:
+      "Kelajakdagi reja, taxmin yoki qarorlarni ifodalashda ishlatiladi.",
     examples: [
       "I will call you tomorrow.",
       "She will study tonight.",
@@ -572,8 +745,7 @@ const GRAMMAR = [
   },
 ];
 
-function App()
- function App() {
+function App() {
   const allowedPages = [
     "home",
     "cefr",
@@ -598,20 +770,20 @@ function App()
   };
 
   const [page, setPage] = useState(getInitialPage());
-
   const [selectedLevel, setSelectedLevel] = useState("A1");
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-
-  const [selectedLevel, setSelectedLevel] = useState("A1");
-  const [questionIndex, setQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] =
+    useState(null);
   const [score, setScore] = useState(0);
   const [testDone, setTestDone] = useState(false);
 
   const [results, setResults] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem("cefr_results")) || [];
+      return (
+        JSON.parse(
+          localStorage.getItem("cefr_results")
+        ) || []
+      );
     } catch {
       return [];
     }
@@ -621,11 +793,14 @@ function App()
   const [grammarIndex, setGrammarIndex] = useState(0);
 
   const questions = QUESTIONS[selectedLevel];
-
   const currentQuestion = questions[questionIndex];
 
   const totalScore = useMemo(
-    () => results.reduce((sum, item) => sum + item.score, 0),
+    () =>
+      results.reduce(
+        (sum, item) => sum + item.score,
+        0
+      ),
     [results]
   );
 
@@ -660,14 +835,18 @@ function App()
   const finishTest = () => {
     const finalScore =
       score +
-      (selectedAnswer === currentQuestion.answer ? 1 : 0);
+      (selectedAnswer === currentQuestion.answer
+        ? 1
+        : 0);
 
     const result = {
       id: Date.now(),
       level: selectedLevel,
       score: finalScore,
       total: questions.length,
-      percent: Math.round((finalScore / questions.length) * 100),
+      percent: Math.round(
+        (finalScore / questions.length) * 100
+      ),
       date: new Date().toLocaleDateString("uz-UZ"),
     };
 
@@ -690,13 +869,10 @@ function App()
 
   const getLevelTitle = (level) => {
     return (
-      LEVELS.find((item) => item.id === level)?.title || ""
+      LEVELS.find((item) => item.id === level)?.title ||
+      ""
     );
   };
-
-  /* =========================
-     HOME
-  ========================= */
 
   if (page === "home") {
     return (
@@ -836,10 +1012,6 @@ function App()
     );
   }
 
-  /* =========================
-     CEFR
-  ========================= */
-
   if (page === "cefr" || page === "tests") {
     return (
       <div className="app">
@@ -888,10 +1060,6 @@ function App()
     );
   }
 
-  /* =========================
-     TEST
-  ========================= */
-
   if (page === "test") {
     if (testDone) {
       const percentage = Math.round(
@@ -917,7 +1085,8 @@ function App()
               <h1>Test tugadi!</h1>
 
               <div className="result-level">
-                {selectedLevel} — {getLevelTitle(selectedLevel)}
+                {selectedLevel} —{" "}
+                {getLevelTitle(selectedLevel)}
               </div>
 
               <div className="result-score">
@@ -933,7 +1102,9 @@ function App()
               <div className="result-actions">
                 <button
                   className="primary-button"
-                  onClick={() => startTest(selectedLevel)}
+                  onClick={() =>
+                    startTest(selectedLevel)
+                  }
                 >
                   🔄 Qayta ishlash
                 </button>
@@ -992,7 +1163,11 @@ function App()
           </div>
 
           <div className="progress-bar">
-            <div style={{ width: `${percentage}%` }} />
+            <div
+              style={{
+                width: `${percentage}%`,
+              }}
+            />
           </div>
 
           <div className="question-card">
@@ -1028,7 +1203,9 @@ function App()
                       }
                     >
                       <span>
-                        {String.fromCharCode(65 + index)}
+                        {String.fromCharCode(
+                          65 + index
+                        )}
                       </span>
 
                       {option}
@@ -1091,10 +1268,6 @@ function App()
     );
   }
 
-  /* =========================
-     VOCABULARY
-  ========================= */
-
   if (page === "vocabulary") {
     const word = VOCABULARY[vocabIndex];
 
@@ -1119,6 +1292,7 @@ function App()
 
           <div className="lesson-top">
             <span>Word</span>
+
             <strong>
               {vocabIndex + 1}/{VOCABULARY.length}
             </strong>
@@ -1146,7 +1320,9 @@ function App()
               className="secondary-button"
               onClick={() =>
                 setVocabIndex(
-                  (vocabIndex - 1 + VOCABULARY.length) %
+                  (vocabIndex -
+                    1 +
+                    VOCABULARY.length) %
                     VOCABULARY.length
                 )
               }
@@ -1172,10 +1348,6 @@ function App()
       </div>
     );
   }
-
-  /* =========================
-     GRAMMAR
-  ========================= */
 
   if (page === "grammar") {
     const grammar = GRAMMAR[grammarIndex];
@@ -1231,7 +1403,9 @@ function App()
               className="secondary-button"
               onClick={() =>
                 setGrammarIndex(
-                  (grammarIndex - 1 + GRAMMAR.length) %
+                  (grammarIndex -
+                    1 +
+                    GRAMMAR.length) %
                     GRAMMAR.length
                 )
               }
@@ -1243,7 +1417,8 @@ function App()
               className="primary-button"
               onClick={() =>
                 setGrammarIndex(
-                  (grammarIndex + 1) % GRAMMAR.length
+                  (grammarIndex + 1) %
+                    GRAMMAR.length
                 )
               }
             >
@@ -1257,14 +1432,12 @@ function App()
     );
   }
 
-  /* =========================
-     RESULTS
-  ========================= */
-
   if (page === "results") {
     const best =
       results.length > 0
-        ? Math.max(...results.map((r) => r.percent))
+        ? Math.max(
+            ...results.map((r) => r.percent)
+          )
         : 0;
 
     return (
@@ -1288,7 +1461,9 @@ function App()
 
           <div className="overall-result">
             <span>Eng yaxshi natija</span>
+
             <strong>{best}%</strong>
+
             <small>
               Jami testlar: {results.length}
             </small>
@@ -1297,10 +1472,12 @@ function App()
           {results.length === 0 ? (
             <div className="empty-state">
               <div>📝</div>
+
               <h2>Hali test ishlamagansiz</h2>
+
               <p>
-                Birinchi testni boshlang va natijangiz shu
-                yerda ko‘rinadi.
+                Birinchi testni boshlang va natijangiz
+                shu yerda ko‘rinadi.
               </p>
 
               <button
@@ -1313,7 +1490,10 @@ function App()
           ) : (
             <div className="stats-list">
               {results.map((result) => (
-                <div className="stat" key={result.id}>
+                <div
+                  className="stat"
+                  key={result.id}
+                >
                   <div className="stat-top">
                     <strong>
                       {result.level} —{" "}
@@ -1347,10 +1527,6 @@ function App()
     );
   }
 
-  /* =========================
-     RANKING
-  ========================= */
-
   if (page === "ranking") {
     return (
       <div className="app">
@@ -1375,7 +1551,9 @@ function App()
             <div className="ranking-item top-rank">
               <div className="rank-number">🥇</div>
 
-              <div className="ranking-avatar">D</div>
+              <div className="ranking-avatar">
+                D
+              </div>
 
               <div className="ranking-user">
                 <strong>Diyor</strong>
@@ -1391,7 +1569,9 @@ function App()
             <div className="ranking-item">
               <div className="rank-number">🥈</div>
 
-              <div className="ranking-avatar">A</div>
+              <div className="ranking-avatar">
+                A
+              </div>
 
               <div className="ranking-user">
                 <strong>Aziz</strong>
@@ -1407,7 +1587,9 @@ function App()
             <div className="ranking-item">
               <div className="rank-number">🥉</div>
 
-              <div className="ranking-avatar">S</div>
+              <div className="ranking-avatar">
+                S
+              </div>
 
               <div className="ranking-user">
                 <strong>Sardor</strong>
@@ -1427,14 +1609,12 @@ function App()
     );
   }
 
-  /* =========================
-     PROFILE
-  ========================= */
-
   if (page === "profile") {
     const best =
       results.length > 0
-        ? Math.max(...results.map((r) => r.percent))
+        ? Math.max(
+            ...results.map((r) => r.percent)
+          )
         : 0;
 
     return (
@@ -1452,7 +1632,7 @@ function App()
               D
             </div>
 
-            <h1>Diyor</h1>
+            <h1>{userName}</h1>
 
             <p>CEFR English o‘quvchisi</p>
 
@@ -1489,13 +1669,16 @@ function App()
 
                 <div>
                   <strong>First Test</strong>
+
                   <small>
                     Birinchi testni yakunlang
                   </small>
                 </div>
 
                 <b>
-                  {results.length > 0 ? "✓" : "🔒"}
+                  {results.length > 0
+                    ? "✓"
+                    : "🔒"}
                 </b>
               </div>
 
@@ -1510,6 +1693,7 @@ function App()
 
                 <div>
                   <strong>5 Tests</strong>
+
                   <small>
                     5 ta test ishlang
                   </small>
@@ -1530,10 +1714,6 @@ function App()
     );
   }
 
-  /* =========================
-     ABOUT
-  ========================= */
-
   if (page === "about") {
     return (
       <div className="app">
@@ -1552,8 +1732,8 @@ function App()
 
             <p>
               Ingliz tilini A1 dan C2 gacha o‘rganish,
-              test ishlash va natijalarni kuzatish uchun
-              mo‘ljallangan platforma.
+              test ishlash va natijalarni kuzatish
+              uchun mo‘ljallangan platforma.
             </p>
 
             <div className="about-section">
@@ -1568,6 +1748,7 @@ function App()
 
                   <div>
                     <b>{level.title}</b>
+
                     <span>
                       CEFR English level
                     </span>
@@ -1603,7 +1784,9 @@ function BottomNav({ page, setPage }) {
   return (
     <nav className="bottom-nav">
       <button
-        className={page === "home" ? "active" : ""}
+        className={
+          page === "home" ? "active" : ""
+        }
         onClick={() => setPage("home")}
       >
         <span>🏠</span>
@@ -1623,7 +1806,9 @@ function BottomNav({ page, setPage }) {
       </button>
 
       <button
-        className={page === "results" ? "active" : ""}
+        className={
+          page === "results" ? "active" : ""
+        }
         onClick={() => setPage("results")}
       >
         <span>📊</span>
@@ -1631,7 +1816,9 @@ function BottomNav({ page, setPage }) {
       </button>
 
       <button
-        className={page === "profile" ? "active" : ""}
+        className={
+          page === "profile" ? "active" : ""
+        }
         onClick={() => setPage("profile")}
       >
         <span>👤</span>
