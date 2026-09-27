@@ -115,18 +115,35 @@ export default async (request) => {
   }
 
   try {
+export default async (request) => {
+  if (request.method !== "POST") {
+    return new Response("OK", { status: 200 });
+  }
+
+  try {
     const update = await request.json();
+
+    console.log(
+      "TELEGRAM UPDATE:",
+      JSON.stringify(update)
+    );
 
     if (update.message) {
       const message = update.message;
       const chatId = message.chat.id;
-      const firstName = message.from?.first_name || "do‘st";
+      const firstName =
+        message.from?.first_name || "do‘st";
       const text = message.text || "";
 
+      console.log("MESSAGE TEXT:", text);
+
       if (text === "/start") {
+        console.log("START RECEIVED");
         await sendStart(chatId, firstName);
       }
     }
+
+
 
     if (update.callback_query) {
       const query = update.callback_query;
