@@ -572,8 +572,36 @@ const GRAMMAR = [
   },
 ];
 
-function App() {
-  const [page, setPage] = useState("home");
+function App()
+ function App() {
+  const allowedPages = [
+    "home",
+    "cefr",
+    "tests",
+    "test",
+    "vocabulary",
+    "grammar",
+    "results",
+    "ranking",
+    "profile",
+    "about",
+  ];
+
+  const getInitialPage = () => {
+    const requestedPage = new URLSearchParams(
+      window.location.search
+    ).get("page");
+
+    return allowedPages.includes(requestedPage)
+      ? requestedPage
+      : "home";
+  };
+
+  const [page, setPage] = useState(getInitialPage());
+
+  const [selectedLevel, setSelectedLevel] = useState("A1");
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const [selectedLevel, setSelectedLevel] = useState("A1");
   const [questionIndex, setQuestionIndex] = useState(0);
